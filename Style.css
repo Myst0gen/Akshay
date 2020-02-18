@@ -1,0 +1,460 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color:#000;
+    font-size:15px;
+    line-height: 1.5;
+}
+
+a{
+    color:#262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width:90%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.logo{
+    width:135px;
+}
+.MainNav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+padding: 35px 0px;
+font-size:14px;
+}
+
+.MainNav ul{
+    display: flex;
+}
+
+.MainNav ul li{
+    padding: 0px 12px;
+}
+
+.MainNav ul.MainMenu li a{
+    font-weight: 500;
+    padding-bottom: 3px;
+    transition: border-bottom 0.2s;
+}
+
+
+.MainNav ul.MainMenu{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.MainNav ul.MainMenu li a:hover{
+    border-bottom: 2px solid #0a6cb3;
+}
+
+.MainNav ul.right-menu a{
+    font-weight: 500;
+}
+
+
+.MainNav ul.right-menu a i{
+    color:#0a6cb3;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 14px 20px;
+    background: #0a6cb3;
+    font-size: 15px;
+    color:white;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.showcase{
+    width: 100%;
+    height: 600px;
+    background: url('silver-ring-on-book-page-3646901.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+}
+
+.showcase h2,.showcase p {
+    margin-bottom: 20px;
+    color:white;
+}
+
+.showcase h2{
+    font-size: 50px;
+    max-width: 725px;
+}
+
+.showcase div{
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+a
+.showcase h2{
+    font-size:30px;
+}
+
+.Services{
+    padding-top: 70px;
+    margin-top: 20px;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.Services .servicesinfo h4,.cards .servicesinfo .servicepara  p,.About .servicesinfo h4{
+    margin-bottom: 20px;
+}
+
+.Services .servicesinfo h4{
+    color:#0a6cb3;
+}
+.Services .servicesinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Services .servicesinfo .servicepara{
+    max-width: 800px;
+    font-size: 35px;
+}
+
+.About .servicesinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .servicesinfo h4{
+    color:#0a6cb3;
+}
+
+
+
+/* Home Cards */
+
+.cards{
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    text-align: center;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+}
+.cards div{
+    margin: 10px;
+    padding: 10px;
+    /* margin: 0px 10px;
+    padding: 15px 10px; */
+    /* border:2px solid black; */
+    /* border-radius: 4px; */
+    text-align: center;
+    background-color: #fafAfA;
+}
+
+.cards div .cardicons{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.cards div .cardsinfo{
+    max-width: 400px;
+    border:none;
+    font-size: 15px;
+    text-align: center;
+    color:#929292;
+    word-wrap: break-word;
+    white-space: initial;
+
+}
+
+.cards i{
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border:1px solid #0a6cb3;
+    color:white;
+    background: #0a6cb3;
+    box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+    border-radius: 50%;
+}
+
+.cards h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    color:black;
+}
+
+.cards a{
+    color:#0a6cb3;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+
+.cards div.CardsContainer:hover{
+    background-color: #0a6cb3;
+    color:white;
+    transition: 0.5s;
+    /* cursor: pointer; */
+}
+
+.cards div.CardsContainer:hover i{
+    color:#0a6cb3;
+    background-color: white;
+    transition: 0.5s;
+    border:none;
+}
+
+.cards div.CardsContainer:hover .cardsinfo{
+    background-color: #0a6cb3;
+    color:white;
+    transition: 0.5s;
+}
+
+.cards div.CardsContainer:hover h3{
+  color:white;
+  transition: 0.5s;
+}
+
+
+.About .AboutCol{
+    padding:20px;
+    margin:10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
+    text-align: start;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    height: 550px;
+}
+
+
+
+
+.AboutCol img{
+    width: 100%;
+    height: 100%;
+}
+
+.AboutCol .Aboutpara{
+    padding-left:30px;
+    margin-left: 20px;
+}
+
+.Aboutpara h3{
+    font-size: 30px;
+    color:#262626;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.Aboutpara p{
+    font-size: 15px;
+    color:black;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.Aboutpara ul li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.Aboutpara ul li i{
+    padding-right: 12px;
+    margin-right: 10px;
+    color:#29ED81
+}
+
+
+.Pricing{
+    padding:50px 30px;
+    margin:10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    text-align: center;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.Pricing .Pricingcards{
+    border:1px solid #D3D3D3;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 4px;
+
+}
+
+.Pricingcards h2{
+    font-weight:500;
+    font-size: 28px;
+}
+
+.Pricingcards h1{
+    font-size: 45px;
+    color:#0a6cb3;
+}
+
+.Pricingcards h1 sub,.Pricingcards h1 sup{
+    font-size: 16px;
+}
+
+.Pricingcards ul{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.Pricingcards ul li{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.Pricingcards h1,.Pricingcards h2{
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.Pricingcards button{
+    padding:15px 50px;
+    margin-bottom: 10px;
+    background: #0a6cb3;
+    font-size: 14px;
+    color:white;
+    border:1px solid #0a6cb3;
+    box-shadow: 0 4px 20px -5px rgba(66,133,244,.4);
+}
+
+.Pricingcards button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.links{
+    background: black;
+    color:white;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.links-inner{
+
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.links-inner ul li img{
+    width: 170px;
+    align-items: flex-start;
+}
+
+.links li{
+    line-height: 2.8;
+    text-align: center;
+}
+
+.links li a{
+    color:white;
+    text-decoration: none;
+}
+
+.links li h3{
+    font-size: 18px;
+}
+
+.followus{
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+
+}
+
+.followus li i{
+    padding: 15px 16px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.links-inner li p{
+    line-height: normal;
+    text-align: left;
+}
+
+.MainFooter{
+    background: black;
+    color:white;
+    font-size:12px;
+    padding: 20px 0;
+}
+
+.footer-inner{
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MainFooter ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.MainFooter div{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.MainFooter ul li{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 15px; 
+}
+
