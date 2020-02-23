@@ -46,7 +46,7 @@ ul{
 }
 
 .main-nav .logo{
-    width: 160px;
+    width: 120px;
 }
 
 .main-nav ul{
@@ -63,6 +63,10 @@ ul{
 }
 
 .main-nav ul li a{
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+.main-nav ul li p{
     font-weight: 500;
     padding-bottom: 3px;
 }
@@ -520,7 +524,7 @@ ul{
         opacity: 0.5;
     }
 
-    .main-nav ul.main-menu{
+    /* .main-nav ul.main-menu{
         display: block;
         position: absolute;
         top:0;
@@ -533,6 +537,22 @@ ul{
         padding: 30px;
         transform: translateX(-500px);
         transition: transform 0.5s ease-in-out;
+    } */
+    .main-nav ul.main-menu{
+        display: block;
+        height: 100%;
+        /* top:0;
+        left:0; */
+        background: #f2f2f2;
+        position: fixed; /* Stay in place */
+     z-index: 1; /* Stay on top */
+     top: 0; /* Stay at the top */
+     left: 0;
+     border-right:#ccc 1px solid;
+     opacity: 0.9;
+     padding: 50px 20px;
+     transform: translateX(-520px);
+     transition: transform 0.5s ease-in-out;
     }
 
     .main-nav ul.right-menu{
@@ -542,7 +562,7 @@ ul{
     }
 
     .main-nav ul.main-menu li{
-        padding: 10px;
+        padding: 10px 140px 10px 10px;
         border-bottom: #ccc solid 1px;
         font-size: 15px;
     }
@@ -615,9 +635,9 @@ padding: 200px 30px;
 
 @media(min-width:768px) and (max-width:1025px){
     
-    html,body{height:100%;}
+    /* html,body{height:100%;}
     .main-nav ul.main-menu{height:100%;}
-    
+     */
     .Nav-btn{
         display: block;
     }
@@ -625,27 +645,46 @@ padding: 200px 30px;
         opacity: 0.5;
     }
 
-    .main-nav ul.main-menu{
+    /* .main-nav ul.main-menu{
         display: block;
         position: absolute;
         top:0;
         left:0;
         background: #f2f2f2;
         width: 50%;
-        /* height: 100%; */
+        height: 100%;
         border-right:#ccc 1px solid;
         opacity: 0.9;
         padding: 40px 70px;
         transform: translateX(-520px);
         transition: transform 0.5s ease-in-out;
     }
+ */
+
+ .main-nav ul.main-menu{
+     display: block;
+     height: 100%;
+     /* top:0;
+     left:0; */
+     background: #f2f2f2;
+     position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  border-right:#ccc 1px solid;
+  opacity: 0.9;
+  padding: 50px 20px;
+  transform: translateX(-520px);
+  transition: transform 0.5s ease-in-out;
+ }
+    
 
     .main-nav ul.right-menu{
         margin-right: 50px;
     }
 
     .main-nav ul.main-menu li{
-        padding: 10px;
+        padding: 10px 140px 10px 10px;;
         border-bottom: #ccc solid 1px;
         font-size: 15px;
     }
